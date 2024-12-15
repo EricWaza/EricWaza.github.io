@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacte</title>
+    <link rel="stylesheet" href="itinerari.css">
+</head>
+<body>
+<header>
+    <h1>Benvingut al meu portal personal</h1>
+    <nav>
+        <ul>
+            <li><a href="iteració1.html">Sobre mi</a></li>
+            <li><a href="iteració2.html">Horari</a></li>
+            <li><a href="iteració3.html">Galeria</a></li>
+            <li><a href="iteració4.html">Contacte</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <form class="form-container" action="https://alumnat.cat/form" method="POST" enctype="multipart/form-data">
+        <h1>Selecció de Nou Treballador</h1>
+        <fieldset>
+            <legend>Dades Personals</legend>
+            <div>
+                <label for="nom">Nom</label>
+                <input type="text" id="nom" name="nom" required>
+            </div>
+            <div>
+                <label for="cognoms">Cognoms</label>
+                <input type="text" id="cognoms" name="cognoms" required>
+            </div>
+            <div>
+                <label for="edat">Edat</label>
+                <input type="number" id="edat" name="edat" min="18" required>
+            </div>
+            <div>
+                <label for="dni">DNI</label>
+                <input type="text" id="dni" name="dni" required>
+            </div>
+            <div>
+                <label for="color">Color preferit</label>
+                <input type="text" id="color" name="color">
+            </div>
+            <div>
+                <label for="mail">Correu electrònic</label>
+                <input type="email" id="mail" name="mail" required>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Informació Addicional</legend>
+            <div class="full-width">
+                <label for="estudis">Estudis</label>
+                <select id="estudis" name="estudis" required>
+                    <option value="">Selecciona...</option>
+                    <option value="primaris">Primaris</option>
+                    <option value="secundaris">Secundaris</option>
+                    <option value="universitaris">Universitaris</option>
+                    <option value="altres">Altres</option>
+                </select>
+            </div>
+            <div class="full-width">
+                <label>Sexe</label>
+            <div>
+                <input type="radio" id="sexe-m" name="sexe" value="m" required>
+                <label for="sexe-m">Home</label>
+            </div>
+            <div>
+                <input type="radio" id="sexe-f" name="sexe" value="f">
+                <label for="sexe-f">Dona</label>
+            </div>
+            <div>
+                <input type="radio" id="sexe-altre" name="sexe" value="altre">
+                <label for="sexe-altre">Altre</label>
+            </div>
+            </div>
+
+            <div class="full-width">
+                <label for="explicacio">Explicació</label>
+                <textarea id="explicacio" name="explicacio"></textarea>
+            </div>
+
+            <div class="full-width">
+                <label for="foto">Fotografia</label>
+                <input type="file" id="foto" name="foto" accept="image/*">
+            </div>
+
+            <div class="privacy full-width">
+                <input type="checkbox" id="privacitat" name="privacitat" required>
+                <label for="privacitat">Accepto la política de privacitat de l'empresa</label>
+            </div>
+        </fieldset>
+        <button type="submit" class="submit-btn full-width">Enviar</button>
+    </form>
+</main>
+<footer>
+    <p>&copy; 2024 Eric Claramunt. Tots els drets reservats.</p>
+</footer>
+</body>
+</html>
